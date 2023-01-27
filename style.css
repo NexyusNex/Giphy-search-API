@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background-image: url(5172658.jpg);
+  background-size: cover;
+  display: flex;
+}
