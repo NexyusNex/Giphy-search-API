@@ -5,6 +5,7 @@
 }
 
 .container {
+  color: white;
   height: 100vh;
   background-image: url(5172658.jpg);
   background-size: cover;
@@ -14,14 +15,38 @@
 }
 
 .header {
-  color: white;
   padding: 25px 0;
   width: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   background-color: #4495ff3f;
   display: flex;
   justify-content: center;
 }
 
-.image-container {
+.search {
+  margin-top: 25px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.buttons button {
+  font-size: 14px;
+  width: 80px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #0077ff;
+  border: 1px solid #0055b6;
+  color: white;
+  font-weight: bold;
+}
+
+.buttons button:hover {
+  background-color: #0062d1;
+  cursor: pointer;
+}
+
+.buttons button:active {
+  background-color: #0055b6;
 }
