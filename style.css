@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .container {
@@ -8,4 +9,19 @@
   background-image: url(5172658.jpg);
   background-size: cover;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  color: white;
+  padding: 25px 0;
+  width: 100%;
+  margin-bottom: 200px;
+  background-color: #4495ff3f;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
 }
