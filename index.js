@@ -15,6 +15,7 @@ function searchImage(url) {
 }
 
 cats.addEventListener("click", () => {
+  if (image.style.display != "block") image.style.display = "block";
   const url =
     "https://api.giphy.com/v1/gifs/translate?api_key=eiCCVwTsJ7uWKA9Hyc9TZ8Wosb2FzmhW&s=cats";
   searchImage(url);
@@ -27,6 +28,7 @@ search.addEventListener("click", () => {
     error.textContent = "Search can't be empty!";
     return;
   }
+  if (image.style.display != "block") image.style.display = "block";
   error.textContent = "";
   const url =
     "https://api.giphy.com/v1/gifs/translate?api_key=eiCCVwTsJ7uWKA9Hyc9TZ8Wosb2FzmhW&s=" +

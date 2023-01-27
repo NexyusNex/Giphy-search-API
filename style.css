@@ -23,6 +23,10 @@
   justify-content: center;
 }
 
+#image {
+  display: none;
+}
+
 .search {
   margin-top: 25px;
   font-size: 24px;
@@ -73,4 +77,20 @@
 
 .buttons button:active {
   background-color: #0055b6;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: #c9c9c9;
+}
+
+a:hover {
+  color: #449bff;
 }
