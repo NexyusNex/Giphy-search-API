@@ -47,6 +47,13 @@
   box-shadow: 0px 0px 15px #0055b6;
 }
 
+.error {
+  font-size: 16px;
+  height: 24px;
+  color: rgb(255, 211, 211);
+  text-shadow: 0px 0px 8px red;
+}
+
 .buttons button {
   font-size: 14px;
   width: 80px;
@@ -56,6 +63,7 @@
   border: 1px solid #0055b6;
   color: white;
   font-weight: bold;
+  margin: 0 8px;
 }
 
 .buttons button:hover {

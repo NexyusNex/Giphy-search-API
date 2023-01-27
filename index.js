@@ -1,5 +1,6 @@
 const image = document.querySelector("#image");
 const cats = document.querySelector("#cats");
+const search = document.querySelector("#search");
 
 function searchImage(url) {
   fetch(url, {
@@ -16,5 +17,19 @@ function searchImage(url) {
 cats.addEventListener("click", () => {
   const url =
     "https://api.giphy.com/v1/gifs/translate?api_key=eiCCVwTsJ7uWKA9Hyc9TZ8Wosb2FzmhW&s=cats";
+  searchImage(url);
+});
+
+search.addEventListener("click", () => {
+  const input = document.querySelector("#text");
+  const error = document.querySelector(".error");
+  if (input.value == "") {
+    error.textContent = "Search can't be empty!";
+    return;
+  }
+  error.textContent = "";
+  const url =
+    "https://api.giphy.com/v1/gifs/translate?api_key=eiCCVwTsJ7uWKA9Hyc9TZ8Wosb2FzmhW&s=" +
+    input.value;
   searchImage(url);
 });
