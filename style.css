@@ -6,7 +6,9 @@
 
 .container {
   color: white;
-  height: 100vh;
+  height: 100svh;
+  min-height: 1000px;
+  text-align: center;
   background-image: url(5172658.jpg);
   background-size: cover;
   display: flex;
@@ -94,4 +96,10 @@ a:visited {
 
 a:hover {
   color: #449bff;
+}
+
+@media screen and (width<=700px) {
+  #image {
+    max-width: 95%;
+  }
 }
