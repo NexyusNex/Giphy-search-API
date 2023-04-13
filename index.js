@@ -2,12 +2,19 @@ const image = document.querySelector("#image");
 const cats = document.querySelector("#cats");
 const search = document.querySelector("#search");
 
+var previousURL = "";
+
 async function searchImage(url) {
   const response = await fetch(url, {
     mode: "cors",
   });
   const json = await response.json();
-  image.src = json.data.images.original.url;
+  if (previousURL != json.data.images.original.url) {
+    previousURL = json.data.images.original.url;
+    image.src = previousURL;
+  } else {
+    searchImage(url);
+  }
 }
 
 cats.addEventListener("click", () => {
